@@ -1,0 +1,17 @@
+[[block]]
+block = "focused_window"
+format = " $title "
+
+[[block]]
+block = "sound"
+[[block.click]]
+button = "left"
+cmd = "pavucontrol"
+
+[[block]]
+block = "battery"
+
+[[block]]
+block = "time"
+interval = 1
+format = " $timestamp.datetime(f:'%a %Y-%m-%d %H:%M:%S') "
