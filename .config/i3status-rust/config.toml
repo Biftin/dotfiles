@@ -1,3 +1,6 @@
+[icons]
+icons = "material-nf"
+
 [[block]]
 block = "focused_window"
 format = " $title "
