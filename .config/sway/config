@@ -68,6 +68,10 @@ input * {
     xkb_variant 'nodeadkeys'
 }
 
+input type:touchpad {
+    natural_scroll enabled
+}
+
 ### Key bindings
 #
 # Basics:
@@ -233,7 +237,7 @@ bindsym $mod+r mode "resize"
 bar {
     position top
 
-    font pango:Cascadia Mono Bold 11
+    font pango:monospace 11
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
