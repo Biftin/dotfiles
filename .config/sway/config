@@ -68,6 +68,10 @@ input * {
     xkb_variant 'nodeadkeys'
 }
 
+input type:touchpad {
+    natural_scroll enabled
+}
+
 ### Key bindings
 #
 # Basics:
@@ -95,7 +99,7 @@ input * {
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Exit sway' 'swaymsg exit' -B 'Reboot' 'reboot' -B 'Power off' 'poweroff'
 #
 # Moving around:
 #
@@ -219,7 +223,7 @@ default_floating_border pixel 2
 bar {
     position top
 
-    font pango:Iosevka Fixed 12
+    font pango:Iosevka Fixed 11
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
