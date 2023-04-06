@@ -3,5 +3,8 @@ if status is-interactive
     alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 end
 
+# Disable greeting message
+set -g fish_greeting
+
 # Use starship prompt
 starship init fish | source
