@@ -12,6 +12,9 @@ button = "left"
 cmd = "pavucontrol"
 
 [[block]]
+block = "backlight"
+
+[[block]]
 block = "battery"
 driver = "sysfs"
 
