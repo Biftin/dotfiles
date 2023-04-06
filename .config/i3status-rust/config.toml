@@ -6,6 +6,10 @@ block = "focused_window"
 format = " $title | - "
 
 [[block]]
+block = "music"
+format = " $icon {$combo.str(max_w:20,rot_interval:0.20) |}"
+
+[[block]]
 block = "sound"
 [[block.click]]
 button = "left"
