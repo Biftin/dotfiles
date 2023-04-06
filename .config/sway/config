@@ -68,10 +68,6 @@ input * {
     xkb_variant 'nodeadkeys'
 }
 
-input type:touchpad {
-    natural_scroll enabled
-}
-
 ### Key bindings
 #
 # Basics:
