@@ -220,8 +220,11 @@ bindsym $mod+r mode "resize"
     bindsym XF86AudioNext exec --no-startup-id playerctl next
     bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
-default_border pixel 2
-default_floating_border pixel 2
+#
+# Visuals:
+#
+    default_border pixel 2
+    default_floating_border pixel 2
 
 #
 # Status Bar:
@@ -239,8 +242,12 @@ bar {
     colors {
         statusline #ffffff
         background #323232
-    #     inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
+
+#
+# Window rules:
+#
+for_window [app_id="mpv"] floating enable
 
 include /etc/sway/config.d/*
