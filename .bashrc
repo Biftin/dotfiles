@@ -15,10 +15,9 @@ alias diff='diff --color=auto'
 alias grep='grep --color=auto'
 alias ip='ip --color=auto'
 alias ls='exa --color=auto'
+alias cat='bat -p'
 
 export LESS='-R --use-color -Dd+r$Du+b'
-
-alias cat='bat -p'
 
 # Manage configuration via Git
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
