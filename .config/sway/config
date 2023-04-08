@@ -95,7 +95,7 @@ input * {
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Exit sway' 'swaymsg exit' -B 'Reboot' 'reboot' -B 'Power off' 'poweroff'
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Exit sway' 'swaymsg exit' -Z 'Sleep' 'systemctl suspend' -B 'Reboot' 'systemctl reboot' -B 'Power off' 'systemctl poweroff'
 #
 # Moving around:
 #
