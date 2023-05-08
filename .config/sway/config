@@ -230,20 +230,8 @@ mode "resize" {
 #
 # Status Bar:
 #
-# Read `man 5 sway-bar` for more information about this section.
 bar {
-    position top
-
-    font pango:monospace 11
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command i3status-rs
-
-    colors {
-        statusline #ffffff
-        background #323232
-    }
+    swaybar_command waybar
 }
 
 include ~/.config/sway/window-rules.conf
