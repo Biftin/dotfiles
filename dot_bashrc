@@ -1,0 +1,29 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# Start Plasma when on VT 1
+if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+    exec startplasma-wayland
+fi
+
+# Shell options
+shopt -s checkjobs
+shopt -s globstar
+
+# Shell environment
+export HISTCONTROL='erasedups:ignorespace'
+
+# Aliases
+alias cat='bat -p'
+alias diff='diff --color=auto'
+alias grep='grep --color=auto'
+alias ip='ip --color=auto'
+alias ls='exa --color=auto'
+export LESS='-R --use-color -Dd+r$Du+b'
+
+# Prompt
+eval "$(starship init bash)"
