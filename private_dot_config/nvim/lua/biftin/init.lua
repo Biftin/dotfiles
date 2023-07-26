@@ -1,3 +1,3 @@
-require("biftin.packer")
-require("biftin.remap")
 require("biftin.set")
+require("biftin.keymap")
+require("biftin.plugins")
