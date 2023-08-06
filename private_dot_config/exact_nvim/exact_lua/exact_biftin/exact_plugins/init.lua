@@ -16,7 +16,6 @@ require("lazy").setup({
     -- Color Theme
     {
         "rose-pine/neovim",
-        lazy = false,
         priority = 1000,
         opts = {
             disable_background = true

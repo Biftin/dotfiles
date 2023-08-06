@@ -7,7 +7,7 @@
 
 # Start Plasma when on VT 1
 if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-    exec startplasma-wayland
+    exec Hyprland >/dev/null 2>&1
 fi
 
 # Shell options
@@ -23,6 +23,18 @@ alias diff='diff --color=auto'
 alias grep='grep --color=auto'
 alias ip='ip --color=auto'
 alias ls='exa --color=auto'
+
+## Disk Management
+alias ud-mount='udisksctl mount --block-device'
+alias ud-umount='udisksctl unmount --block-device'
+alias ud-poweroff='udisksctl power-off --block-device'
+
+## Build Helpers
+alias rmpkg="rm *.pkg.tar.zst"
+
+alias meson-s='meson setup builddir'
+alias meson-c='meson compile -C builddir'
+
 export LESS='-R --use-color -Dd+r$Du+b'
 
 # Prompt
