@@ -1,0 +1,133 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: white;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+waybar#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces button {
+    background: #1f1f1f;
+    color: white;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+
+#workspaces button:first-child {
+    margin-left: 0;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+
+    background: lightblue;
+    color: black;
+}
+
+#workspaces button.active {
+    background: tomato;
+}
+
+#clock,
+#battery,
+#network,
+#wireplumber,
+#idle_inhibitor {
+    padding: 0 10px;
+    color: black;
+}
+
+#window {
+    margin: 0px 5px;
+}
+
+.modules-left {
+    margin-left: 20px;
+}
+
+.modules-right {
+    margin-right: 20px;
+}
+
+#clock {
+    background-color: #abe9b3;
+    color: #161320;
+    border-radius: 0 20px 20px 0;
+}
+
+#battery {
+    background-color: white;
+    color: black;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: #161320;
+    background-color: #b5e8e0;
+}
+
+@keyframes blink {
+    to {
+        background-color: white;
+        color: black;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: black;
+}
+
+#network {
+    background-color: #bd93f9;
+    color: #161320;
+}
+
+#network.disconnected {
+    background-color: #fa8bff;
+    color: red;
+}
+
+#wireplumber {
+    background-color: #fae3b0;
+    color: #1a1826;
+}
+
+#wireplumber.muted {
+    background-color: #fa8bff;
+    color: red;
+}
+
+#idle_inhibitor {
+    background-color: black;
+    color: white;
+    border-radius: 20px 0px 0px 20px;
+
+    transition: all 0.5s ease;
+}
+
+#idle_inhibitor.activated {
+    background-color: white;
+    color: black;
+}

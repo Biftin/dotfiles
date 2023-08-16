@@ -1,0 +1,58 @@
+{
+    // Position and Layout
+    "layer": "top",
+    "position": "bottom",
+    "spacing": 4,
+    "margin-top": 0,
+    "margin-bottom": 5,
+
+    // Modules
+    "modules-left": ["hyprland/workspaces"],
+    "modules-right": ["idle_inhibitor", "wireplumber", "network", "battery", "clock"],
+
+    "hyprland/workspaces": {
+        "format": "{id}"
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": "",
+        }
+    },
+
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "Connected  ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": ["", "", ""],
+        "on-click": "pavucontrol",
+        "on-click-right": "wpctl set-mute @DEFAULT_SINK@ toggle"
+    }
+}
