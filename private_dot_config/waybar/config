@@ -1,10 +1,10 @@
 {
     // Position and Layout
     "layer": "top",
-    "position": "bottom",
+    "position": "top",
     "spacing": 4,
-    "margin-top": 0,
-    "margin-bottom": 5,
+    "margin-top": 5,
+    "margin-bottom": 0,
 
     // Modules
     "modules-left": ["hyprland/workspaces"],
@@ -41,7 +41,7 @@
 
     "network": {
         "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "Connected  ",
+        "format-ethernet": "Connected ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
