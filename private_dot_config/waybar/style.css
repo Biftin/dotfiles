@@ -43,6 +43,7 @@ waybar#waybar.hidden {
 #clock,
 #battery,
 #network,
+#bluetooth,
 #wireplumber,
 #idle_inhibitor {
     padding: 0 10px;
@@ -78,7 +79,7 @@ waybar#waybar.hidden {
     background-color: #b5e8e0;
 }
 
-@keyframes blink {
+@keyframes critical-battery {
     to {
         background-color: white;
         color: black;
@@ -88,7 +89,7 @@ waybar#waybar.hidden {
 #battery.critical:not(.charging) {
     background-color: #f53c3c;
     color: white;
-    animation-name: blink;
+    animation-name: critical-battery;
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -107,6 +108,24 @@ label:focus {
 #network.disconnected {
     background-color: #fa8bff;
     color: red;
+}
+
+#bluetooth {
+    background-color: #a7c7e7;
+    color: black;
+}
+
+#bluetooth.discovering {
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#bluetooth.off {
+    background-color: black;
+    color: grey;
 }
 
 #wireplumber {

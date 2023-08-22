@@ -8,7 +8,8 @@
 
     // Modules
     "modules-left": ["hyprland/workspaces"],
-    "modules-right": ["idle_inhibitor", "wireplumber", "network", "battery", "clock"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["idle_inhibitor", "backlight", "wireplumber", "bluetooth", "network", "battery", "clock"],
 
     "hyprland/workspaces": {
         "format": "{id}"
@@ -46,6 +47,13 @@
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+
+    "bluetooth": {
+        "format": "",
+        "format-disabled": "",
+        "format-connected": " {device_alias}",
+        "format-connected-battery": " {device_alias} ({device_battery_percentage}%)"
     },
 
     "wireplumber": {
