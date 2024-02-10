@@ -12,6 +12,7 @@ ripgrep
 rsync
 socat
 starship
+tmux
 unzip
 wget
 yt-dlp
