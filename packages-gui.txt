@@ -6,6 +6,7 @@ gvfs
 hyprland
 j4-dmenu-desktop
 mpv
+pavucontrol
 swayidle
 swaylock
 thunar
