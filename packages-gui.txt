@@ -1,5 +1,8 @@
+bemenu-wayland
+dunst
 foot
 hyprland
+j4-dmenu-desktop
 mpv
 swayidle
 swaylock
