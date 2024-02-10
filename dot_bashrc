@@ -24,6 +24,8 @@ alias grep='grep --color=auto'
 alias ip='ip --color=auto'
 alias ls='eza --color=auto'
 
+alias vim='nvim'
+
 ## Disk Management
 alias ud-mount='udisksctl mount --block-device'
 alias ud-umount='udisksctl unmount --block-device'
