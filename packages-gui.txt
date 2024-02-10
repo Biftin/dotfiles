@@ -1,0 +1,8 @@
+foot
+hyprland
+mpv
+swayidle
+swaylock
+waybar
+xdg-desktop-portal-gtk
+xdg-desktop-portal-hyprland

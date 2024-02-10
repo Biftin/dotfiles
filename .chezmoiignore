@@ -1,4 +1,4 @@
 # vim:ft=gitignore
 
 README.MD
-packages.txt
+packages*.txt
