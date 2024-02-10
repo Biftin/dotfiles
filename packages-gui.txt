@@ -12,6 +12,7 @@ swaylock
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
+ttf-sourcecodepro-nerd
 tumbler
 waybar
 xdg-desktop-portal-gtk
