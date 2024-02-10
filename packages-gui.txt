@@ -1,11 +1,17 @@
 bemenu-wayland
 dunst
+ffmpegthumbnailer
 foot
+gvfs
 hyprland
 j4-dmenu-desktop
 mpv
 swayidle
 swaylock
+thunar
+thunar-archive-plugin
+thunar-media-tags-plugin
+tumbler
 waybar
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
