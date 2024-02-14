@@ -1,4 +1,7 @@
 bemenu-wayland
+blueman
+bluez
+bluez-utils
 dunst
 ffmpegthumbnailer
 foot
